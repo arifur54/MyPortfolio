@@ -7,7 +7,7 @@ import myimg from '../resources/me.jpg';
 class Resume extends Component {
     render(){
         return(
-            <div className="container" style={{display: 'flex'}}>
+            <div className="container mod-pos" style={{display: 'flex'}}>
                 <div className="row">
                     <div className="col s12 m4">
                         

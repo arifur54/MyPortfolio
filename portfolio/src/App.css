@@ -41,11 +41,17 @@
 }
 
 
+.mod-pos{
+    padding-top: 4%;
+    position: relative;
+    margin: auto;
+    padding: auto;
+}
 
-
-.banner-border p{
-    padding-top: 1em;
+.banner-border h4{
+    /* padding-top: 1em; */
     color: white;
+
 }
 
 .social-links{
@@ -80,7 +86,11 @@
     height: match-parent;
     background: white;
     color: black;
-    border: 2px solid red;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 4px 29px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 4px 29px -6px rgba(0,0,0,0.75);
+box-shadow: -4px 4px 29px -6px rgba(0,0,0,0.75);
+  
 }
     
 .background-resume{

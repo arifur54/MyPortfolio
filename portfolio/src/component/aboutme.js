@@ -10,11 +10,11 @@ class Aboutme extends Component {
                         <div className="row">
                             <div className="col s12 m6">
                                 <div className="container center">
-                                    <h3>About me</h3>
+                                    <h3 style={{textDecoration: "underline"}}>About me</h3>
                                     <img src={myimg} alt="Avatar" className="avatar-aboutme img-rotate"/>
-                                    <p>Hi, My name is Arifur Rahman, I am Toronto based software developer. Blah blah blah.
-                                        My name is Arifur Rahman, I am Toronto based software developer. 
-                                        My name is Arifur Rahman, I am Toronto based software developer.</p>
+                                    <p>Hello there, My name is Arifur Rahman, I am Toronto based software developer. I am currently on my final semister of
+                                        computer programming analytic program at George Brown college. 
+                                    </p>
                                 </div>
                             </div>
                             <div className="col s12 m6">
@@ -54,6 +54,13 @@ class Aboutme extends Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="col s12 m12">
+                            <h3>My Interests</h3>
+                                <div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

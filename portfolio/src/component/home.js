@@ -3,20 +3,23 @@ import myimg from '../resources/me.jpg';
 class Home extends Component {
     render(){
         return(
-            <div style={{width: '100%', height: '100%',margin: 'auto'}}>
+            <div>
                 <div className="home-color">
-                    <div className="container center">
+                    <div className="container center mod-pos">
                         <div className="row">
                             <div className="col s12">
                             <img src={myimg} alt="Arifur Rahman" className="avatar circle img-rotate img-hover"/>
                             </div>                    
                         </div>
                         <div className="banner-border">
-                            <p className="flow-text">
-                                Hi, My name is Arifur Rahman, I am Toronto based software developer. Blah blah blah.
-                                 My name is Arifur Rahman, I am Toronto based software developer. 
-                                 My name is Arifur Rahman, I am Toronto based software developer.
-                            </p>
+                            <h4>Welcome to my <i>portfolio</i></h4>
+                            <h4 className="flow-text">
+                               My name is Arfur Rahman                               
+                            </h4>
+                            <h4 className="flow-text" style={{paddingBottom: "10px"}}>
+                                I am a software developer
+                            </h4>
+                            
                             <hr/>
                             <div className="social-links">
                                 <a href="https://www.linkedin.com/in/arifur-rahman-03719614b/" aria-hidden="true"><i className="fab fa-linkedin"></i></a>
