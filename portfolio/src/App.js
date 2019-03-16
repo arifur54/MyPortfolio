@@ -4,11 +4,17 @@ import Main from './component/main';
 import M from 'materialize-css';
 import './App.css';
 
+import mylogo from './resources/mylogo.png';
+
 
 class App extends Component {
+  state = { isOpen: false };
+
   componentDidMount(){
     var elems = document.querySelectorAll('.sidenav');
     M.Sidenav.init(elems);
+
+    setTimeout(this.toggle, 1000);
   }
   openSideNav () {
     let elem = document.getElementById('slide-out')
@@ -21,13 +27,15 @@ class App extends Component {
     instance.close();
   }
 
+  
+
   render() {
     return (
       <div>
         <div className="navbar-fixed">
       <nav className="nav-wrapper header-color">
-        <div className="container">
-          <Link to="/" className="brand-logo">MY PORTFOLIO</Link>
+        <div className="container li-font">
+          <Link to="/" className="brand-logo"><img src={mylogo} alt="mylogo" style={{height: "70px", width: "70px"}}></img></Link>
           <Link to="#" className="sidenav-trigger" data-target="slide-out">
             <i className="material-icons" onClick={this.openSideNav} >menu</i>
           </Link>
@@ -42,14 +50,14 @@ class App extends Component {
     </nav>
     </div>
 
-    <ul className="sidenav sidenavbar-color" id="slide-out">
-      <div className="container"  style={{color: 'aliceblue'}}>
-        <h5>Menu Options</h5>   
-        <li><Link to="/" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>Home</Link></li>    
-        <li><Link to="/aboutme" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>About Me</Link></li>
-        <li><Link to="/projects" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>Projects</Link></li>
-        <li><Link to="/resume" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>Resume</Link></li>
-        <li><Link to="/contactme" style={{color: 'aliceblue'}}  onClick={this.closeSideNav}>Contact Me</Link></li>
+    <ul className="sidenav sidenavbar-color" id="slide-out" >
+      <div className="container li-font"  style={{color: 'aliceblue'}}>
+        <h5>Menu Options</h5>  
+        <li className="item"><Link to="/" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>Home</Link></li>    
+        <li className="item"><Link to="/aboutme" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>About Me</Link></li>
+        <li className="item"><Link to="/projects" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>Projects</Link></li>
+        <li className="item"><Link to="/resume" style={{color: 'aliceblue'}} onClick={this.closeSideNav}>Resume</Link></li>
+        <li className="item"><Link to="/contactme" style={{color: 'aliceblue'}}  onClick={this.closeSideNav}>Contact Me</Link></li>
       </div>
     </ul>    
 
@@ -57,12 +65,7 @@ class App extends Component {
         <Main />
     </div>
 
-    {/* <footer className="page-footer" style={{backgroundColor: '#000000'}}>
-      <div className="container center">
-        Arifur Rahman © {(new Date().getFullYear())} <br></br>
-        Made with react
-      </div>
-    </footer> */}
+
   </div>
     )
   }
