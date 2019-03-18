@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import projimg02 from '../../resources/procimg02.JPG'
 
-import posed from 'react-pose';
+// import posed from 'react-pose';
 import SplitText from 'react-pose-text';
+
 const charPoses2 = {
   exit: { y: 20, opacity: 0 },
   enter: {
@@ -18,14 +19,14 @@ const charPoses2 = {
 };
 
 
-const Sidebar = posed.div({
-  open: {
-    x: '0%',
-    delayChildren: 200,
-    staggerChildren: 50
-  },
-  closed: { x: '-100%', delay: 300 },
-});
+// const Sidebar = posed.div({
+//   open: {
+//     x: '0%',
+//     delayChildren: 200,
+//     staggerChildren: 50
+//   },
+//   closed: { x: '-100%', delay: 300 },
+// });
 
 
 class ReactCard extends Component {
@@ -36,7 +37,7 @@ class ReactCard extends Component {
             <h4><SplitText initialPose="exit" pose="enter" charPoses={charPoses2}>React</SplitText></h4>
             </div>
             <div className="col s12 m1 l1"></div>
-            <Sidebar initialPose="closed" pose="open">
+            {/* <Sidebar initialPose="closed" pose="open"> */}
             <div className="col s12 m10 l10">
               <div className="card medium">
                   <div className="card-image waves-effect waves-block waves-light">
@@ -60,7 +61,7 @@ class ReactCard extends Component {
                   </div>
               </div>   
             </div>
-            </Sidebar>
+            {/* </Sidebar> */}
             <div className="col s12 m1 l1"><br></br></div>
             </div>
         )

@@ -53,7 +53,7 @@ class Projects extends Component {
           {/* </Sidebar> */}
           {/* <Sidebar initialPose="closed" pose="open"> */}
             <ReactCard 
-            url="https://github.com/arifur54/MyPortfolio"
+            url="#"
             linkName="github repositories"
             cardTitle="My Portfolio"
             cardContent="This website was created using React and Node.js, React along with Materializecss was used to create front-end user interface, events and routing of the website and Node.js along with 

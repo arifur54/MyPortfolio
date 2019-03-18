@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import projimg01 from '../../resources/procimg01.jpg'
 import projimg05 from '../../resources/img11.JPG'
-import {Link} from 'react-router-dom';
 
 import posed from 'react-pose';
 import SplitText from 'react-pose-text';
@@ -71,7 +70,7 @@ class AngularCard extends Component {
                   </div>
                   <div className="card-content">
                     <span className="card-title activator grey-text text-darken-4">{this.props.cardTitle2}<i className="material-icons right">more_vert</i></span>
-                    <p><Link to={this.props.url2}><i className="fab fa-github-alt"></i> {this.props.linkName2}</Link></p>
+                    <p><a href={this.props.url2}><i className="fab fa-github-alt"></i> {this.props.linkName2}</a></p>
                     <div className="row">
                       <div className="col s1">
                       <h5><i className="fab fa-php"></i></h5>
